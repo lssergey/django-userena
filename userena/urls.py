@@ -46,7 +46,7 @@ urlpatterns = patterns('',
 
     # Activate
     url(r'^activate/(?P<activation_key>\w+)/$',
-       userena_views.activate,
+       userena_views.activate, {'success_url': '/'},
        name='userena_activate'),
 
     # Change email and confirm it

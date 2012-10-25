@@ -12,3 +12,5 @@ def get_version():
 
     """
     return '.'.join((str(each) for each in VERSION[:3]))
+
+
